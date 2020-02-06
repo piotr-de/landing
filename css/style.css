@@ -1,0 +1,155 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: Open Sans;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  width: 100%;
+  background-image: url('https://wallpaperplay.com/walls/full/7/6/e/44854.jpg');
+  background-position: center;
+}
+
+.banner-container {
+  color: white;
+  font-family: Poppins;
+  font-weight: 400;
+  height: 200px;
+  width: 900px;
+  padding: 50px 100px;
+  margin: 250px auto;
+  line-height: 2rem;
+}
+
+.btn-large {
+  background-color: #5d5d9d;
+  opacity: 0.75;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 30px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-large:hover {
+  background-color: #4a4a84;
+  transition: 0.5s;
+}
+
+.how-it-works-container {
+  color: black;
+  font-family: Poppins;
+  font-weight: 400;
+  height: 300px;
+  width: 800px;
+  margin: 20px auto;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  background: white;
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.1);
+  width: 250px;
+  height: 200px;
+  color: rgba(1, 1, 1, 0.75);
+  font-size: 12px;
+  line-height: 1rem;
+}
+
+.card > i {
+  font-size: 50px;
+  color: #5f5862;
+  padding: 30px 0;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(1, 1, 1, 0.75);
+  text-align: center;
+  padding-top: 50px;
+  font-size: 12px;
+  color: white;
+}
+
+.footer > a {
+  font-size: 25px;
+  color: white;
+  padding: 25px 8px;
+  text-decoration: none;
+}
+
+@media (max-width: 820px) {
+
+  .how-it-works-container {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .cards {
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 90%;
+    height: 200px;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 700px) {
+ .banner-container {
+    height: 200px;
+    width: 900px;
+    padding: 0 20px;
+    margin: 250px auto;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 540px) {
+
+  .how-it-works-container {
+    height: 100%;
+  }
+
+  .cards {
+    display: block;
+  }
+
+  .card {
+    margin: 20px auto;
+  }
+
+  .footer {
+    display: block;
+  }
+}
